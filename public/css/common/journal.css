@@ -1,0 +1,333 @@
+.journal-container {
+
+	margin-bottom: 50px;
+	background-color: #fff;
+	padding: 0;
+}
+
+	.journal-container .left-panel {
+		padding: 10px 20px;
+		float: left;
+		width: 800px;
+		min-height: 200px;
+
+	}
+
+		.left-panel .top {
+			border-bottom: 1px solid rgba(255,217,82,1);
+			padding-bottom: 10px;
+			overflow: hidden;
+		}
+
+		.left-panel .top span {
+			float: left;
+		}
+
+			.left-panel .top>.other-edit {
+				padding: 0;
+				margin: 0 0 0 20px;
+				min-width: 200px;
+				min-height: 34px;
+			}
+
+			.top>.other-edit span {
+				color: #555;
+				cursor: pointer;
+				font-size: 14px;
+				line-height: 14px;
+				padding: 10px;
+				transition: all 0.2s;
+			}
+
+			.top>.other-edit span:hover {
+				color: rgba(255,217,82,1);
+			}
+
+			.top>.other-edit a {
+				font-size: 14px;
+				text-decoration: none;
+				color: skyblue;
+				transition: all 0.2s;
+			}
+
+			.top>.other-edit a:hover {
+				color: rgba(255,217,82,1);	
+			}
+			
+
+
+		.left-panel .write-btn {
+			display: block;
+			text-decoration: none;
+			background-color: rgba(255,217,82,1);
+			color: rgba(110,77,50,0.7);
+			border: 1px solid rgba(255,217,82,1);
+			padding: 5px 20px;
+			font-size: 16px;
+			transition: all 0.2s;
+		}
+
+		.left-panel .write-btn:hover {
+			background-color: #fff;
+			color: rgba(255,217,82,1);
+		}
+
+.journal-list {
+	min-height: 400px;
+	border-bottom: 1px solid rgba(255,217,82,1);
+	padding: 0;
+	margin: 10px 0 0 0;
+	list-style: none;
+}
+
+	
+	.journal-list>li {
+		padding: 10px;
+		font-size: 15px;
+	}
+
+	.journal-list>li:nth-child(even) {
+		background-color: #FFFDF1;
+	}
+
+	.journal-list>li>span {
+
+	}
+
+		.journal-list .journal {
+			color: #555;
+			text-decoration: none;
+		}
+			.journal-list .journal:hover {
+				color: #aaa;
+				text-decoration: underline;
+			}
+
+		.journal-list .date {
+			float: right;
+			margin-right: 10px;
+			color: #777;
+			font-size: 12px;
+			line-height: 12px;
+			padding-top: 5px;
+		}
+
+		.journal-list .edit {
+			float: right;
+			color: #915833;
+			font-size: 12px;
+			line-height: 12px;
+			padding-top: 5px;
+		}
+
+		.journal-list .o_edit {
+			position: relative;
+			line-height: 20px;
+			float: right;
+			margin-left: 5px;
+			font-size: 12px;
+			cursor: pointer;
+			border: 1px solid #fff;
+			background-color: #fff;
+		}
+
+			.journal-list .o_edit i {
+				background-color: #fff;
+				padding: 5px;
+				position: relative;
+			}
+
+			.journal-list .o_edit.active i {
+				z-index: 5;
+				border-top:  1px solid #ccc;
+				border-right: 1px solid #ccc;
+				border-left:  1px solid #ccc;
+			}
+
+				.journal-list .o_edit .o_panel {
+					display: none;
+					z-index:1;
+					background-color: #fff;
+					list-style: none;
+					padding: 10px;
+					margin: 0;
+					position: absolute;
+					top: 22px;
+					right: 0px;
+					border: 1px solid #ccc;
+				}
+
+				.journal-list .o_panel li a {
+					padding: 0;
+					overflow: hidden;
+					white-space: nowrap;
+					margin: 0;
+					text-align: right;
+					display: block;
+					width: auto;
+					font-size: 13px;
+					color: #777;
+					text-decoration: none;
+				}
+
+				.journal-list .o_panel li a:hover {
+					color: skyblue;
+					text-decoration: underline;
+				}
+
+
+.left-panel .pagination {
+	min-height: 20px;
+	width: 100%;
+	margin: 10px 0 0 0;
+	text-align: center;
+	
+}
+
+	.pagination ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.pagination li {
+
+		font-size: 12px;
+		line-height: 12px;
+		display: inline-block;
+		padding: 0 5px;
+	}
+
+	.pagination a {
+		color: #555;
+		text-decoration: none;
+	}
+
+	.pagination a.active {
+		text-decoration: underline;
+		color: blue;
+	}
+
+	.pagination .page-input {
+		padding: 0 0;
+		width: 3em;
+		text-align: center;
+	}
+
+	.pagination span {
+
+		vertical-align: center;
+		display: inline-block;
+	}
+
+	.pagination .btn-confirm-page {
+		font-size: 12px;
+		line-height: 10px;
+
+		padding: 4px 5px;
+		margin-bottom: -6px;
+		background-color: rgba(255,217,82,1);
+		color: rgba(110,77,50,0.7);
+		border: 1px solid rgba(255,217,82,1);
+		display: block;
+	}
+
+	.pagination .btn-confirm-page:hover {
+		background-color: #fff;
+		color: rgba(255,217,82,1);
+	}
+
+
+
+
+
+/* 右边部分 */
+.journal-container .right-panel {
+	float: left;
+	padding: 10px 10px 10px 0;
+	width: 300px;
+	min-height: 200px;
+}
+
+	.right-panel .panel-box {
+		padding: 0 10px 10px;
+		min-height: 100px;
+	}
+
+	.panel-box .title {
+		color: #777;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 14px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.panel-box .title span {
+		float: right;
+		font-size: 12px;
+	}
+
+	.panel-box .title a {
+		color: #915833;
+		text-decoration: none;
+	}
+
+	.panel-box  .journal-classify {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+		.journal-classify>li {
+			font-size: 13px;
+		}
+
+		.journal-classify>li:not(:first-child) {
+			margin-top: 10px;
+		}
+
+		.journal-classify>li a {
+			display: block;
+			color: #915833;
+			text-decoration: none;
+		}
+
+		.journal-classify>li span {
+			float: right;
+		}
+
+
+ 	.search-journal-input {
+ 		position: relative;
+ 		background-color: red;
+
+ 	}
+
+ 		.search-journal-input>input {
+ 			width: 100%;
+ 			font-size: 12px;
+ 			
+ 			border: 1px solid #aaa;
+ 			color: #777;
+ 			padding: 5px 30px 5px 5px;
+ 		}
+
+ 		.search-journal-input>i {
+ 			box-sizing: border-box;
+ 			position: absolute;
+ 			margin-right: 1px;
+ 			right: 0;
+ 			top: 1px;
+ 			width: 27px;
+ 			height: 27px;
+ 			padding: 4px;
+ 			font-size: 19px;
+ 			color: #777;
+ 			cursor: pointer;
+ 		}
+
+ 			.search-journal-input>i:hover {
+ 				color: #222;
+ 			}

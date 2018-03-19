@@ -1,0 +1,175 @@
+/*************************\
+	$CONTENTS
+\*************************/
+/**
+ * CONTENTS ....... Contents
+ * RESET .......... Reset Styles
+ * LAYOUT
+ * KIT
+ * STATE
+ */
+
+
+/*************************\
+	$RESET
+\*************************/
+
+
+div, input, form, button,ul, li, p {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f2f2;
+	font-family: "微软雅黑";
+}
+
+/*************************\
+	$LAYOUT
+\*************************/
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.container-center1100px {
+	max-width: 1100px;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+
+@top-background-color : #79d9cf;
+.top-bar {
+	width: 100%;
+	background-color: @top-background-color;
+	display: flex;
+	overflow: hidden;
+}
+
+@logocolor : #f2d649 + #333;
+	.logo {
+		align-self: center;
+		line-height: 30px;
+		text-indent: 45px;
+		font-family: "微软雅黑";
+		padding: 10px;
+		font-size: 30px;
+		color: #fff;
+		float: left;
+		background-image: url(../img/logo.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 45px 45px;
+	}
+
+	.nav {
+		float: left;
+	}
+
+	.apart-nav {
+		float: right;
+	}
+
+	.nav , .apart-nav{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav li, .apart-nav li {
+		display: inline-block;
+	}
+
+	.nav li {
+		padding: 15px 20px;
+	}
+
+	.apart-nav li {
+		margin-top: 19px;
+	}
+
+	.nav li:hover {
+		background-color: @top-background-color + #111;
+	}
+
+	.nav a, .apart-nav a {
+		color: #fff;
+		text-decoration: none;
+		font-family: "微软雅黑";
+		display: block;
+		height: 100%;
+		text-align: bottom;
+	}
+
+	.nav a {
+		font-size: 20px;
+	}
+
+	.apart-nav a {
+		font-size: 16px;
+	}
+
+	.apart-nav a:hover {
+		color: #eee;
+	}
+
+
+/*************************\
+	$KIT
+\*************************/
+
+.btn {
+	color: #999;
+	font-size: 16px;
+	padding: 10px;
+	border: 1px solid #aaa;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+	.btn-default {
+		
+		text-align: center;
+		background-color: rgba(255, 255, 255, 0);
+		color: #aaa;
+	}
+
+	.btn-default:hover {
+		background-color: rgba(0,0,0, 0.1);
+		color: #777;
+	}
+
+	.btn-block {
+		width: 100%;
+	}
+
+/*************************\
+	$STATE
+\*************************/
+
+
+.hidden {
+	display: none;
+}
+
+.show-block {
+	display: block;
+}
+
+.show-inline {
+	display: inline-block;
+}
+

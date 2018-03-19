@@ -1,0 +1,138 @@
+
+.forgetpass-container {
+	background-color: #fff;
+	min-height: 200px;
+	width: 600px;
+	margin: 60px auto;
+	box-shadow: 0px 0px 5px 0px #ccc;
+	padding-bottom: 10px;
+}
+
+	.forgetpass-container .title {
+		line-height: 1em;
+		text-align: center;
+		width: 100%;
+		padding: 30px 0;
+		color: #555;
+		margin: 0;
+	}
+	.forgetpass-dashed-line {
+		width: 96%;
+		border-top: 1px dashed #999;
+		margin: 0 auto;
+	}
+
+/*表格样式*/
+.forgetpass-form {
+	margin: 10px auto;
+}
+
+	.forgetpass-form .form-row {
+		display: block;
+		text-align: center;
+	}
+
+	.forgetpass-form .form-row:not(:first-child) {
+		margin-top: 10px;
+	}
+
+		
+
+		.forgetpass-form .form-row label {
+			display: inline-block;
+            width: 4em;
+			text-align: right;
+        
+			color: #555;
+			font-size: 16px;
+			line-height: 16px;
+			margin: 0 10px 0 0;
+			padding: 0;
+			vertical-align: center;
+		}
+
+	.forgetpass-form .form-input {
+		display: inline-block;
+		position: relative;
+	}
+
+	.form-input>input {
+		border: 1px solid #aaa;
+		color: #555;
+		font-size: 14px;
+		line-height: 14px;
+		margin: 0 70px 0 10px;
+		padding: 10px;
+		width: 200px;
+		transition: all 0.1s;
+	}
+
+	.form-input>input:focus {
+		border-left: 5px solid #8aeae0;
+		outline: none;
+	}
+
+.forgetpass-form #reset-distance{
+    margin-bottom: 10px;
+}
+	.forgetpass-form .btn {
+		background-color: #8aeae0;
+		border-color: #8aeae0;
+		margin: auto;
+		padding: 10px 20px;
+		color: #fff;
+		transition: all .2s;
+	}
+		.forgetpass-form .btn:hover {
+			background-color: #fff;
+			color: #8aeae0;
+		}
+    .form-row .mobile-check-btn a{
+        color: #555;
+        font-size: 14px;
+        padding-right: 30px;
+    }
+
+/*
+    图片验证码
+*/
+    .form-row .form-check{
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+  
+        
+    }
+    .form-check>input {
+        
+		border: 1px solid #aaa;
+		color: #555;
+		font-size: 14px;
+		line-height: 14px;
+		margin: 0 0 0 10px;
+		padding: 10px;
+		width: 120px;
+        height: 37px;
+        float: left;
+         
+		transition: all 0.1s;
+	}
+    .form-check .checkcode{
+        width: 210px;
+        height: 37px;
+    }
+    .form-check img{
+        border-style: none;
+        border: 0;   
+        background: #6b6b6b;
+        width: 80px;
+        height: 37px;
+    }
+    .form-check>input:focus {
+		border-left: 5px solid #8aeae0;
+		outline: none;
+	}
+
+
+
+		

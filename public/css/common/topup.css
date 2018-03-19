@@ -1,0 +1,441 @@
+
+.topup-container {
+	background-color: #fff;
+	min-height: 620px;
+	width: 600px;
+	margin: 60px auto;
+	box-shadow: 0px 0px 5px 0px #ccc;
+	padding-bottom: 10px;
+
+    position: relative;
+}
+.topup-container .next-btn{
+    position: absolute;
+    top:240px;
+    left: 485px;
+    border: 1px solid   #ce5902;
+}
+.topup-container .next-btn a{
+    text-align: center;
+    width: 50px;
+    display: block;
+    color: #fff;
+    background:  #ce5902;
+    line-height: 25px;
+    height: 25px;
+    font-size: 13px;
+    text-decoration: none;
+}
+.topup-contro{
+    width: 498px;
+    margin:20px 50px;
+    padding-top: 20px;
+    border-bottom:3px solid  #ce5902 ;
+}
+.topup-contro .on1{
+    color: #505050;
+    font-size: 16px;
+}
+
+.topup-contro a{
+    display:inline-block;
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    
+    line-height: 30px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #8f8f8f;
+    font-weight: 600;
+    font-family: "微软雅黑";
+    
+}
+/*表格yangshi*/
+#hushubao{
+    display:block;
+    position: absolute;
+}
+.topup-form{
+   width: 100%;
+   padding: 30px;
+   margin-left: 50px;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+   
+}
+
+.topup-form p{
+    color: #de0000;
+    font-size: 12px;
+    text-align: left;
+    margin:5px 0 -10px 140px;
+}
+	.topup-form .form-row {
+		display: block;
+		text-align: center;
+
+	}
+
+	.topup-form .form-row:not(:first-child) {
+		margin-top: 20px;
+	}
+	
+    .topup-form .form-row h5{
+        display: inline-block;
+        text-align: left;
+        font-style: normal;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0px;
+        padding-left:10px;
+       width:270px;
+    }
+		
+
+		.topup-form .form-row label {
+			display: inline-block;
+			width: 6em;
+			text-align: right;
+			color: #555;
+			font-size: 15px;
+			line-height: 16px;
+			margin: 0 10px 0 0;
+			padding: 0;
+			vertical-align: center;
+		}
+
+	.topup-form .form-input {
+		display: inline-block;
+		position: relative;
+	}
+    .topup-form .form-input span{
+        position: absolute;
+        top: 7px;
+        font-weight: 600;
+        left: 180px;
+    }
+
+	.form-input>input {
+		border: 1px solid #aaa;
+		color: #555;
+		font-size: 14px;
+		line-height: 14px;
+		margin: 0 70px 0 10px;
+		padding: 10px;
+		width: 200px;
+		transition: all 0.1s;
+	}
+
+	.form-input>input:focus {
+		border-left: 5px solid  #ce5902;
+		outline: none;
+	}
+
+
+/*
+
+    充值卡部分
+
+
+*/
+#chongzhika{
+    position: relative;
+    display: none;
+}
+.card-form{
+   width: 497px;
+   padding: 30px;
+   margin-left: 50px;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+   
+}
+
+.card-form p{
+    color: #de0000;
+    font-size: 12px;
+    text-align: left;
+    margin:5px 0 -10px 140px;
+}
+	.card-form .form-row {
+		display: block;
+		text-align: center;
+
+	}
+
+	.card-form .form-row:not(:first-child) {
+		margin-top: 20px;
+	}
+	
+    .card-form .form-row h5{
+        display: inline-block;
+        text-align: left;
+        font-style: normal;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0px;
+        padding-left:10px;
+       width:270px;
+    }
+		
+
+		.card-form .form-row label {
+			display: inline-block;
+			width: 6em;
+			text-align: right;
+			color: #555;
+			font-size: 15px;
+			line-height: 16px;
+			margin: 0 10px 0 0;
+			padding: 0;
+			vertical-align: center;
+		}
+
+	.card-form .form-input {
+		display: inline-block;
+		position: relative;
+	}
+    .card-form .form-input span{
+        position: absolute;
+        top: 7px;
+        font-weight: 600;
+        left: 180px;
+    }
+
+	.form-input>input {
+		border: 1px solid #aaa;
+		color: #555;
+		font-size: 14px;
+		line-height: 14px;
+		margin: 0 70px 0 10px;
+		padding: 10px;
+		width: 200px;
+		transition: all 0.1s;
+	}
+
+	.form-input>input:focus {
+		border-left: 5px solid  #ce5902;
+		outline: none;
+	}
+
+/*
+
+*/
+.topuo-record{
+    overflow: hidden;
+    position: absolute;
+    top: 390px;
+    left: 50px;
+    width: 497px;
+    height: 190px;
+    border: 1px solid #c9c9c9;
+
+}
+.topuo-record h2{
+    position: absolute;
+    font-weight: 500;
+    left: 10px;
+    top: -40px;
+    font-size: 15px;
+}
+    
+.topuo-record table{
+    border: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.topuo-record table tr{
+    border: 0px;
+    width: 75px;
+}
+.topuo-record table th{
+    width: 73px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: 500;
+}
+.topuo-record table tr td{
+    border: 0px;
+    width: 72px;
+    font-size: 14px;
+    color:#5c5c5c;
+    
+}
+.topuo-record table tr td span{
+    color: red;
+    font-size: 14px;
+}
+.topuo-record table tr td a{
+    color: #8b8b8b;
+
+}
+
+.topuo-record .record-btn {
+    margin-top: 10px;
+    display: block;
+    float: right;
+    overflow: hidden;
+}
+.topuo-record .record-btn a {
+    float: left;
+    font-size: 14px;
+    width: 50px;
+    text-decoration: none;
+    display: block;
+    color: #727272;
+}
+
+.topuo-record .record-btn a:hover {
+    color: #777;
+    text-decoration: underline;
+}
+
+
+/*弹窗*/
+/* .container{
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+    height: 1000px;
+} */
+/*.box-treasure{
+    width: 800px;
+    height: 340px;
+}*/
+
+
+.treasure-main{
+/*    width: 661px;*/
+    height: 320px;
+/*    border: 1px solid blue;*/
+    margin:0% auto;
+    padding: 10px;
+}
+.treasure-main .main-title{
+    width: 80%;
+    height: 20px;
+    margin: 0 auto;
+    
+}
+.treasure-main .main-title p{
+    font-size:14px; 
+    color: #cd7e12;
+}
+.treasure-main .main-list{
+    width: 80%;
+    margin: 10px auto;
+    height: 200px;
+}
+.main-list .list-box{
+    float: left;
+    width: 280px;
+    height: 200px;
+}
+.list-box .list-lable{
+    width: 85px;
+    height: 100%;
+
+    float: left;
+}
+
+
+.list-box .list-lable ul li{
+    list-style: none;
+    font-size: 14px;
+    width: 85px;
+    height: 30px;
+    margin-left: -40px;
+    margin-top: 5px;
+    line-height: 30px;
+    color: #606060
+}
+.list-box .list-td{
+    float: right;
+    width: 110px;
+    height: 200px;
+    
+}
+
+.list-box .list-td ul li{
+    display: block;
+    margin-left: -100px;
+    margin-bottom: 5px;
+    float: left;
+    list-style: none;
+    font-size: 14px;
+    width:150px;
+    height: 30px;
+    line-height: 30px;
+    color: #7e7e7e
+}
+
+/*脪酶脨脨驴篓鲁盲脰碌脛脷脠脻*/
+.list-box .list-td-inhon ul li{
+    display: block;
+    margin-left: -100px;
+    margin-bottom: 5px;
+    float: left;
+    list-style: none;
+    font-size: 14px;
+    width:290px;
+    height: 30px;
+    line-height: 30px;
+    color: #7e7e7e
+}
+.list-box .list-td-inhon ul li i{
+    font-size:14px; 
+    color: #cd7e12;
+    padding-left: 10px;
+    font-style: normal;
+}
+.list-box .list-td-inhon{
+    float: right;
+    width: 110px;
+    height: 200px;
+}
+/*脪酶脨脨脤脴脫脨虏驴路脰陆谩脢酶*/
+.list-box .list-td ul li span{
+    color: #af2d2d;
+}
+.list-box .list-td-inhon ul li span{
+    color: #af2d2d;
+}
+.main-list .img-box{
+    width: 175px;
+    float: right;
+    margin: 2px 0 0 0;
+    height: 175px;
+    box-shadow: 2px 2px 5px 2px #CCC;
+}
+
+.main-list .img-tishi p{
+    position: relative;
+    top: -15px;
+    left: 360px;
+    width: 170px;
+    color: #6b6b6b;
+    font-size: 14px;
+
+}
+
+.img-box img{
+     width: 175px;
+    height: 175px;
+    
+        
+}
+/*
+掳脥脌颅脌颅掳脥
+*/
+.main-remark{
+    width:80%;
+    margin: auto;
+    height: auto;
+}
+.main-remark p{
+    font-size: 14px;
+    color: #919191;
+    text-indent: 0.8cm;
+}

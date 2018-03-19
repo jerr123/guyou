@@ -1,0 +1,391 @@
+/*************************\
+	$CONTENTS
+\*************************/
+/**
+ * CONTENTS ....... Contents
+ * LAYOUT
+ * KITS
+ * BASICS
+ * DYNAMICS
+ */
+
+/*************************\
+	$LAYOUT
+\*************************/
+
+.top-bottom-padding {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.leftbox, .centerbox, .rightbox {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+.leftbox {
+	width: 200px;
+}
+
+.centerbox {
+	padding: 0 20px;
+	width: 700px;
+	height: 200px;
+}
+
+.rightbox {
+	width: 200px;
+	background-color:green;
+	min-height: 300px;
+}
+
+
+/*
+  左部内容
+ */
+
+
+
+.user-info-panel {
+	width: 100%;
+	box-shadow: 0 0 5px 0px #ccc;
+    overflow: hidden;
+	padding: 20px;
+	background-color: #fff;
+
+	.user-head-image {
+		margin: auto;
+		border: 1px solid #ccc;
+
+		background-color: #eee;
+		width: 120px;
+		height: 120px;
+		border-radius: 60px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.user-nickname {
+
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		width: 100%;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #ccc;
+		text-align: center;
+		font-size: 18px;
+		color: #555;
+		font-weight: bold;
+	}
+
+	.user-infos {
+		
+		list-style: none;
+		padding: 0;
+		margin: 0 0 10px 0;
+	}
+
+	.user-infos li {
+		width: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		line-height: 20px;
+		color: #777;
+		font-size: 14px;
+	}
+
+	.info-title {
+
+		font-weight: bold;
+		margin-right: 10px;
+	}
+
+}
+
+@top-background-color : #79d9cf;
+
+.subnav-panel {
+	box-shadow: 0 0 5px 0px #ccc;
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 20px 20px;
+	width: 100%;
+
+	.subnav-items {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		li {
+
+			font-size: 16px;
+			padding-left: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			line-height: 25px;
+		}
+
+		a {
+			font-size: 15px;
+			text-decoration: none;
+			display: block;
+			color: @top-background-color - #444;
+		}
+
+		li:hover {
+			background-color: @top-background-color + #555;
+		}
+
+		li:hover a {
+			color: #555;
+		}
+
+		li.active {
+			background-color: @top-background-color;
+		}
+
+		li.active a {
+			color: #222;
+		}
+	}
+	
+}
+
+.ads-box {
+	margin-top: 20px;
+	
+	width: auto;
+	padding: 0;
+
+	.ad {
+		margin-bottom: 10px;
+		width: 100%;
+
+		a {
+			display: block;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+
+/*
+  中部内容
+ */
+
+.publish-box {
+	background-color: #fff;
+	width: 100%;
+	box-shadow: 0 0 4px 0 #ccc;
+
+	/* 这里是为了不让子元素和父元素的边距发生重叠现象 */
+	padding-top: 1px; 
+
+	.publisher {
+		color: #555;
+		font-size: 14px;
+		height: 60px;
+		display: block;
+		width: 640px;
+		border: 1px solid #ccc;
+		margin: 10px 10px 0 10px;
+		padding: 10px;
+		overflow: auto;
+	}
+
+	.manipulate {
+		overflow: hidden;
+		margin: 0px 10px;
+		padding: 5px 0;
+	}
+
+	.other-publish {
+		float: left;
+		padding: 0;
+		margin: 2px 0 0 0;
+		list-style: none;
+		color: #999;
+		overflow: hidden;
+
+
+		li {
+			margin-left: 20px;
+			font-size: 20px;
+			display: inline-block;
+		}
+
+		li.active {
+			color: #f2d649;
+		}
+
+		li:hover {
+			color: @top-background-color;
+			cursor: pointer;
+		}
+	}
+
+	.publish-btn-box {
+		float: right;
+		padding-right : 10px;
+
+		.publish-word-num {
+			font-size: 14px;
+			margin-right: 10px;
+			color: #aaa;
+		}
+
+		.publish-btn {
+			
+			color: #fff;
+			background-color: @top-background-color;
+			border: 1px solid @top-background-color;
+			
+			padding: 5px 25px;
+			font-size: 14px;
+			line-height: 14px;
+			
+			border-radius: 5px;
+		}
+
+		.publish-btn:hover {
+			color: #999;
+			background-color: rgba(255,255,255,0);
+			border: 1px solid #aaa;
+			cursor: pointer;
+			
+		}
+
+	}
+
+	
+}
+
+
+
+
+
+/*************************\
+	$KITS
+\*************************/
+
+@ated-bg : #f2d649;
+.at-panel {
+	height: auto;
+	width: 100%;
+	position: relative;
+
+	.ated-box {
+		list-style: none;
+		padding: 10px 10px 5px 10px;
+		margin: 0;
+		width: 100%;
+		
+		border-top: 1px dashed #ccc;
+		border-bottom: 1px dashed #ccc;
+		overflow: hidden;
+		font-size: 12px;
+
+		li {
+			
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 5px;
+			background-color: @ated-bg;
+			color: #555;
+			white-space: nowrap;
+			padding: 5px 10px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			border-radius: 10px;
+			transition: all .5s;
+		}
+
+		i {
+
+			transition: all .5s;
+		}
+
+		i.fa-times:hover {
+			cursor: pointer;
+			transform: rotate(180deg);
+		}
+
+	}
+
+
+	.at-confirm-box {
+		width: 100%;
+		margin: 0;
+		padding: 10px;
+		font-size: 14px;
+		line-height: 14px;
+		p {
+			color: #999;
+			display: inline-block;
+			margin: 0;
+		}
+
+		.at-confirm-btn {
+			color: #fff;
+			background-color: @top-background-color;
+			border: 1px solid @top-background-color;
+			
+			padding: 5px 25px;
+			font-size: 14px;
+			line-height: 14px;
+			
+			border-radius: 5px;
+		}
+
+		.at-confirm-btn:hover {
+			color: #999;
+			background-color: rgba(255,255,255,0);
+			border: 1px solid #aaa;
+			cursor: pointer;
+			
+		}
+	}
+
+	.at-choose-box {
+		z-index: 100;
+		position: absolute;
+		bottom: -400px;
+		height: 400px;
+		width: 100%;
+		background-color: red;
+
+	}
+
+
+	
+
+
+}
+
+
+
+
+/*************************\
+	$BASICS
+\*************************/
+
+
+
+
+
+
+/*************************\
+	$DYNAMICS
+\*************************/
+

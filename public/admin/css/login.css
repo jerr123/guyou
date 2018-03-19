@@ -1,0 +1,105 @@
+@import canvas.css;
+body {
+  font-family 微软雅黑 !important;
+}
+.main-box {
+  width 490px;
+  background-color #ffffff;
+  position absolute;
+  left 50%;
+  margin-left -245px;
+  border-radius 5px;
+  box-shadow 0 0 5px rgba(0, 0, 0, 0.25);
+  border none;
+  margin-top 100px;
+}
+.main-box .top-banner {
+  background #19bca1;
+  height 130px;
+  width 100%;
+  border-radius 5px 5px 0 0;
+  overflow hidden;
+}
+.main-box .top-banner p {
+  text-align center;
+  color #ffffff;
+}
+.main-box .login-wrap {
+  width 100%;
+  height auto;
+  padding 20px 40px;
+}
+.main-box .login-wrap .add-show {
+  top -10px;
+  right -10px;
+  border-radius 0 5px 5px 0;
+}
+.btn {
+  background-color #0f88eb;
+  padding 10px 12px;
+  font-size 16px;
+  border-radius 5px;
+}
+.btnhover {
+  background-color #0578d8;
+}
+.cut-off {
+  width 100%;
+  border-top 1px solid #c2c2c2;
+  position relative;
+  margin 40px 0;
+}
+.cut-off .chose-other {
+  display inline-block;
+  padding 10px 20px;
+  background-color #ffffff;
+  color #999;
+  position absolute;
+  top -20px;
+  left 50%;
+  margin-left -83px;
+}
+.other-login {
+  text-align center;
+}
+.other-login span {
+  display none;
+}
+.to-register {
+  width 100%;
+  height 40px;
+  line-height 40px;
+  border 1px solid #19bca1;
+  border-radius 5px;
+  margin-top 20px;
+  background-color #f7fafc;
+  color #19bca1;
+  text-align center;
+}
+.to-registerhover {
+  box-shadow 0 0 5px rgba(0, 0, 0, 0.35);
+}
+.to-register span {
+  color #333;
+}
+.foot-box {
+  height 40px;
+  border 1px solid #eee;
+  background-color #f9f9f9;
+  position absolute;
+  bottom 20px;
+  width 100%;
+  line-height 40px;
+  color #999;
+}
+.foot-box a {
+  color #999;
+}
+.green-btn {
+  background-color #19bca1 !important;
+  border none!important;
+}
+.green-btnhover {
+  background-color #17ae95 !important;
+  border none!important;
+}

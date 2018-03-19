@@ -1,0 +1,106 @@
+
+.top-bottom-margin {
+	margin: 20px auto;
+	background-color: #fff;
+}
+
+.my-friends-con {
+	box-shadow: 0 0 5px #ccc;
+	overflow: hidden;
+}
+
+.my-friends-con>.title {
+	border-bottom: 1px dashed #ccc;
+	color: #777;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	margin: 10px 0 0 0;
+}
+
+.my-friends-con .friends {
+	overflow: hidden;
+	list-style: none;
+	padding: 10px 0;
+	margin: 0;
+}
+	.friends li {
+		overflow: hidden;
+		position: relative;
+		background-color: #eee;
+		border: 1px solid #ccc;
+		text-align: center;
+		float: left;
+		width: 100px;
+		margin: 10px 11px;
+		transition: all 0.3s;
+	}
+
+	.friends li:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 0 5px 0 #aaa;
+		/*border: 1px solid #eee;*/
+	}
+
+	.friends li:hover .friend-btn {
+		bottom: 0px;
+	}
+
+	.friends li .head-img-con {
+		background-color: #fff;
+
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+
+
+	.friends li .head-img-con a {
+		background-color: #fff;
+		display: block;
+	}
+
+
+	.friends li .head-img-con img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.friends li .name {
+		font-size: 12px;
+		padding: 7px 0;
+	}
+
+	.friends li a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		background-color: #555;
+		padding: 5px 0;
+	}
+
+	.friends li a:hover {
+
+	}
+	
+	.friends li .friend-btn {
+		transition: all 0.3s;
+		position: absolute;
+		bottom: -100px;
+		left: 0;
+		background-color: #79d9cf;
+		color: #fff;
+		border: none;
+		padding: 5px;
+		width: 100%;
+		cursor: pointer;
+		outline: none;
+	}
+
+	.friends li .friend-btn:hover {
+		background-color: #F7AF57;
+	}
+
+.my-friends-con .pagination-con {
+	
+}
+

@@ -1,0 +1,112 @@
+.photo-container {
+/*	min-height: 680px;*/
+	margin-bottom: 50px;
+	background-color: #fff;
+}
+
+	.photo-container .manipulate {
+		padding: 10px 20px;
+		border-bottom: 1px dashed #ccc;
+	}
+
+	.photo-container .upload-photo-btn {
+		background-color:  rgba(255,217,82,1);
+		border: 1px solid  rgba(255,217,82,1);
+		margin: auto;
+		font-size: 16px;
+		padding: 5px 20px;
+		color: rgba(110,77,50,0.7);
+		transition: all .2s;
+	}
+
+	.photo-container .upload-photo-btn:hover {
+		background-color: #fff;
+				   color:  rgba(255,217,82,1);
+				   cursor: pointer;
+	}
+
+	.photo-container .create-album-link {
+		font-size: 14px;
+		color: rgba(51,159,242,1);
+		text-decoration: none;
+		display: inline-block;
+		margin-left: 20px;
+		transition: all .2s;
+	}
+
+	.photo-container .create-album-link:hover {
+		color:  rgba(255,217,82,1);
+	}
+
+
+
+.albums-container {
+	padding: 10px;
+	margin: 0;
+	list-style: none;
+	min-height: 200px;
+	overflow: hidden;
+}
+
+	.albums-container li {
+		width: 200px;
+		margin: 10px 8px;
+		float: left;
+	}
+
+	.albums-container .album-title {
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+		color: #222;
+		padding: 7px 0 5px; /* 上边距多两个px是为了填补outline */
+	}
+
+	.albums-container .infos {
+		color: #777;
+		font-size: 12px;
+		text-align: center;
+	}
+
+		.albums-container .alter-album,
+		.albums-container .delete-album {
+			margin-left: 10px;
+			cursor: pointer;
+		}
+
+		.albums-container .alter-album:hover,
+		.albums-container .delete-album:hover {
+			color: rgba(51,159,242,1);
+		}
+
+		 
+
+
+	.albums-container .face-img-container {
+		width: 178px;
+		margin: auto;
+		overflow: hidden;
+		height: 180px;
+		 border: 1px solid #ccc;
+		/*outline: 1px solid #aaa; */
+		outline-offset: 2px;
+		transition: all .3s;
+	}
+
+	.albums-container .face-img-container:hover {
+		/* border: 3px solid  rgba(255,217,82,1);
+		outline: 1px solid  rgba(255,217,82,1); */
+		/* border: 1px solid #fff;;
+		outline: 1px solid #fff; */
+		transform: translateY(-5px);
+		/*outline-bottom: 2px  solid  rgba(255,217,82,1);*/
+		border-color: rgba(51,159,242,1);
+		box-shadow: 0 0 5px 0 rgba(51,159,242,1);
+
+	}
+
+	.albums-container .face-img-container img {
+		width: 180px;
+	}
+
+

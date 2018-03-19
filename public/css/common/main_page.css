@@ -1,0 +1,445 @@
+.mainpage-container {
+/*	min-height: 680px;*/
+	margin-bottom: 50px;
+}
+
+.container-center1100px{
+    width:950px;
+}
+
+
+/*
+    上面的个人简单头像 名称
+*/
+.mainpage-head{
+    width: 100%;
+    height: 230px;
+    padding: 30px 0;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    background: #fff;
+    background-image:url(/public/img/myhome_bg.jpg);
+    background-size:100% 400px;
+    background-position: 0 -50px;
+    background-repeat:no-repeat;
+
+}
+.head-box{
+
+    width:200px;
+    height: 200px;
+    margin: auto;
+}
+.head-box .head-img{
+    margin: auto;
+    width:120px; 
+    height:120px;
+    border-radius:50%; 
+    overflow:hidden;
+    background: #CCC;
+}
+.head-box .head-img img {
+    width: 100%;
+    height: 100%;
+}
+.head-nick{
+    text-align: center;
+    width: 100%;
+}
+.head-nick p{
+    margin:5px;
+    font-weight:bold;
+
+    color: #d3d3d3;
+    letter-spacing: 2px;
+    font-size: 17px;
+    
+    
+}
+.head-nick a{
+    color: #c7c7c7;
+    font-size:14px;
+    text-decoration:none;
+    
+}
+.head-nick a i{
+    color: #aaaaaa;
+    font-size:13px;
+    font-weight: bold;
+
+}
+.head-nick a:hover{
+    color: #e6e6e6;
+    font-weight:bold;
+
+    
+}
+
+
+.head-nick a:hover i{
+     color: #e6e6e6;
+    font-weight:bold;
+}
+
+
+
+/*
+
+    页面主题
+*/
+.mainpage-mian{
+    width: 100%;
+    height: 900px;
+    margin-top: 20px;
+
+}
+
+
+/*
+    左侧分来板块
+*/
+.main-plate{
+    float:left;
+    width: 300px;
+    height: auto;
+
+    
+}
+
+/*
+    个人信息部分
+        
+*/
+.main-plate .plate-person{
+    width:300px;
+    height: 180px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    margin-bottom: 20px;    
+}
+.plate-person .person-box{
+    width: 280px;
+    height: 180px;
+    margin-left:10px;
+
+}
+.plate-person .person-box h1{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: #545454;
+    border-bottom:1px solid #CCC;
+    
+}
+.plate-person .person-box p{
+    margin:5px 0 0 0;
+    color: #969696;
+    font-size: 14px;
+
+    
+}
+.plate-person .person-box p span{
+
+    color: #484848;
+    font-size: 15px;
+}
+.person-box .person-mian{
+    margin-top: 10px;
+}
+/*
+    日志部分
+        
+*/
+.main-plate .plate-log{
+    width:300px;
+    height:auto;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    margin-bottom: 20px;  
+    
+}
+.plate-log .log-box{
+    width: 280px;
+    height: auto;
+    margin-left:10px;
+    padding-bottom:10px;
+
+}
+.plate-log .log-box h1{
+    margin: 0px;
+    padding-top: 10px;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: #545454;
+    display: inline-block;
+
+    
+}
+
+
+.plate-log .log-box .more-log{
+    padding: 1px 5px;
+    margin-left:207px;
+     color: #969696;
+     font-size: 14px;
+    display: inline-block;
+    
+}
+.plate-log .log-box .more-log:hover{
+    background: #efefef;
+    border-radius: 2px;
+    color: #4d4d4d;
+}
+.plate-log .log-box .more-log-p{
+    padding: 1px 5px;
+    margin-left:177px;
+     color: #969696;
+     font-size: 14px;
+    display: inline-block;
+    
+}
+.plate-log .log-box .more-log-p:hover{
+    background: #efefef;
+    border-radius: 2px;
+    color: #4d4d4d;
+}
+.under-line{
+    border-bottom: 1px solid #CCC;
+}
+.plate-log .log-box p{
+    margin:5px 0 0 0;
+    color: #969696;
+    font-size: 14px;
+
+    
+}
+.plate-log .log-box p span{
+   
+    color: #b4b4b4;
+    font-size: 13px;
+    float: right;
+    
+}
+.plate-log .log-box a{
+    text-decoration: none;
+}
+.plate-log .log-box a:hover p{
+    color: #555555;
+}
+
+.log-box .log-mian{
+    margin-top: 10px;
+}
+
+/*最近上传*/
+.person-mian img{
+    margin-top: 10px;
+    padding: 2px;
+    border: 1px dashed #CCC;
+    width: 60px;
+    height: 60px;
+}
+
+/*
+    关键的动态展示
+*/
+
+.main-state{
+    float: right;
+    width: 620px;
+    height: 2400px;
+    padding-bottom: 30px;
+}
+.main-state .frist{
+    margin:0 0 10px 0;
+}
+.status-box{
+    width:100%;
+    height:auto;
+    margin:20px auto;
+    padding-bottom: 20px;
+    box-shadow: 0 0 5px 0 #CCC;
+    border-radius: 3px;
+    background: #ffffff;
+}
+
+
+/*
+        动态展示标题
+*/
+.box-title .title-img{
+    float: left;
+    width: 60px;
+    height: 0px;
+    border-radius: 50%;
+}
+.box-title{
+    height: 80px;
+}
+.box-title .title-img img{
+
+    width:60px; 
+    margin: 10px 0 0 10px;
+    height:60px;
+    border-radius:50%; 
+    overflow:hidden;
+    background: #CCC;
+}
+.box-title .title-main{
+    float:left;
+    padding-top: 10px;
+    margin-left: 80px;
+}
+.box-title .title-main a{
+    font-weight:bold; 
+    color: #555555;
+    display: block;
+    font-size:15px;
+    text-decoration: none;
+    margin-top: 10px;
+    
+    
+}
+.box-title .title-main a:hover{
+    color: #ac973f;
+    font-weight:bold;
+}
+.box-title .title-main p{
+    color: #636363;
+    margin-top: 10px;
+    font-size: 12px;
+    margin-bottom:10px;
+}
+
+.box-title .fengefu{
+    width: 100%;
+    clear: both;
+
+    border: 1px dashed #CCC;
+}
+/*
+            很关键的状态内容
+
+*/
+.status-box .box-main{
+ 
+    width:90%;
+    overflow: hidden;
+    height: auto;
+    clear: both;
+    margin: auto;
+}
+.status-box .box-main p{
+    font-size: 15px;
+    color: #747474;
+}
+
+    
+/*    多图展示部分*/
+    .more-img{
+        width:100%;
+        height:auto;
+      
+    }
+    .more-img .img-box{
+        width:185px;
+        height:185px;
+        padding:10px;
+        border:1px solid #e4e4e4;
+        float:left;
+    }
+    .more-img .img-box img{
+        background:#fff;
+    }
+    
+/*    单图展示部分*/
+    .one-img img{
+        box-shadow: 0 0 5px 0 #e8e8e8;
+        max-width:730px;
+    }
+    
+
+/*翻页链接*/
+
+.list_pag{
+    margin:0 auto;
+    width: 300px;
+    padding-bottom: 50px;
+}
+.list_pag ul li{
+    border:1px solid #dbdbdb ;
+    width: 40px;
+    float:left;
+    list-style: none;
+    height: 40px;
+    padding: 0px;
+    text-align: center;
+
+}
+.list_pag ul li a{
+    line-height: 40px;
+    text-decoration: none;
+    color: #585858;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.list_pag #on {
+    background: #d4d4d4;
+}
+
+/*
+弹窗
+
+*/    /*    
+    
+    
+    图案弹出部分
+    
+    
+    */
+        
+    .photo_album{
+        position:fixed;    
+        left:50%;
+        margin-left:-2450px;
+        top: 50%;
+
+        z-index:999;
+        width:600px;  
+        height:auto;
+        display:block;
+        transition: all .6s;
+        vertical-align: middle;
+    }
+    .photo_album .box-img{
+       
+        height:auto;
+        text-align: center;
+    
+    }
+    .photo_album img{
+        vertical-align: middle;
+        margin-top:-25%;
+        box-shadow: 2px 2px 2px #272727;
+        max-width:400px;
+        max-height:600px;
+        background:#fff;
+    }
+
+    
+/*遮罩层
+*/
+    .photo_mask{
+       background: #464646;
+       opacity: 0.7;
+       height: 100%;
+       width: 100%;
+       position:fixed;
+       left: 0;
+       top: 0;
+       z-index: 9;
+       display:none;
+    }

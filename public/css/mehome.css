@@ -1,0 +1,161 @@
+/*
+	meheader meframe部分
+ */
+
+.top-bottom-padding {
+	padding: 20px 0;
+	margin: auto;
+}
+
+.meframe {
+	overflow: hidden;
+}
+
+	.meframe .frame-top {
+		width: 100%;
+		background-color: #fff;
+		overflow: hidden;
+	}
+
+		.frame-top .head-img-con {
+			float: left;
+			width: 140px;
+			padding: 10px 0;
+		}
+			.frame-top .head-img {
+				width: 120px;
+				height: 120px;
+				border: 1px solid #ccc;
+				border-radius: 8px;
+				margin: 10px auto;
+				overflow: hidden;
+			}
+
+			.head-img-con .alter-head-img-btn {
+				color: rgba(51,159,242,1);
+				display: block;
+				text-decoration: none;
+				text-align: center;
+				font-size: 12px;
+			}
+
+		.frame-top .head-img-con img {
+			width: 100%;
+		}
+
+
+		.frame-top .meinfos {
+			color: #777;
+			width: 500px;
+			float: left;
+			font-size: 14px;
+			/*background-color: red;*/
+		}
+
+			.frame-top .meinfos ul {
+				overflow: hidden;
+				list-style: none;
+				margin: 10px;
+				padding: 5px 0 0 0;
+				
+			}
+				.frame-top .meinfos li {
+					display: block;
+					line-height: 1em;
+					font-size: 1em;
+					margin-top: 10px;
+				}
+
+			.frame-top .add-under-line {
+				padding: 0 10px;
+				border-bottom: 1px solid #777;
+
+			}
+
+			.frame-top .alter-meinfo-btn {
+				display: inline-block;
+				float: left;
+				text-decoration: none;
+				font-size: 15px;
+				padding: 10px;
+			}
+
+
+		.frame-top .otherinfo {
+			width: 460px;
+			float: left;
+			margin: 20px 0;
+			padding: 0 10px;
+			border-left: 5px solid #eee;
+			border-left;
+			height: 100%;
+			/*background-color: red;*/
+			min-height: 136px;
+		}
+
+
+	.meframe .frame-content-con {
+		margin-top: 10px;
+		overflow: hidden;
+		min-height: 500px;
+		/*background-color: green;*/
+	}
+
+		.frame-content-con .aside-con {
+			/*padding: 10px;*/
+			color: #555;
+			float: left;
+			width: 200px;
+			background-color: #fff;
+			min-height: 200px;
+		}
+			.frame-content-con .aside-con ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				font-size: 15px;
+			}
+
+			.frame-content-con .aside-con li {
+
+				display: block;
+			}
+
+			
+			.frame-content-con .aside-con li.active a {
+				color: #fff;
+				background-color: rgba(21,129,242, 1);
+			}
+
+			.frame-content-con .aside-con li a {
+				padding: 10px 0 10px 40px;
+
+				display: block;
+				color: #555;
+				text-decoration: none;
+			}
+
+			.frame-content-con .aside-con li a:hover {
+				background-color: rgba(21,129,242, 0.5);
+				color: #fff;
+			}
+
+			.frame-content-con .aside-con li i {
+				margin-right: 10px;
+			}
+
+
+		.frame-content-con .content-con {
+			float: left;
+			width: 890px;
+			margin-left: 10px;
+			min-height: 300px;
+			background-color: #fff;
+			color: #555;
+			padding: 10px;
+		}
+
+
+
+
+	

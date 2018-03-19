@@ -1,0 +1,97 @@
+
+.register-container {
+	background-color:#fff;
+	min-height: 200px;
+	width: 600px;
+	margin: 60px auto;
+	box-shadow: 0px 0px 5px 0px #ccc;
+	padding-bottom: 10px;
+}
+
+	.register-container .title {
+		line-height: 1em;
+		text-align: center;
+		width: 100%;
+		padding: 30px 0;
+		color: #555;
+		margin: 0;
+	}
+	.register-dashed-line {
+		width: 96%;
+		border-top: 1px dashed #999;
+		margin: 0 auto;
+	}
+
+
+.register-form {
+	margin: 10px auto;
+}
+
+	.register-form .form-row {
+		display: block;
+		text-align: center;
+	}
+
+	.register-form .form-row:not(:first-child) {
+		margin-top: 10px;
+	}
+
+	.get-code {
+		font-size: 15px;
+		color: #F7AF57;
+	}
+
+	.get-code:hover {
+		color: rgba(21,129,242, 1);
+	}
+
+		
+
+		.register-form .form-row label {
+			display: inline-block;
+			width: 5em;
+			text-align: right;
+			color: #555;
+			font-size: 16px;
+			line-height: 16px;
+			margin: 0 10px 0 0;
+			padding: 0;
+			vertical-align: center;
+		}
+
+	.register-form .form-input {
+		display: inline-block;
+		position: relative;
+	}
+
+	.form-input>input {
+		border: 1px solid #aaa;
+		color: #555;
+		font-size: 14px;
+		line-height: 14px;
+		margin: 0 70px 0 10px;
+		padding: 10px;
+		width: 200px;
+		transition: all 0.1s;
+	}
+
+	.form-input>input:focus {
+		border-left: 5px solid rgba(21,129,242, 1);
+		outline: none;
+	}
+
+
+	.register-form .btn {
+		background-color: rgba(21,129,242, 1);
+		border-color: rgba(21,129,242, 1);
+		margin: auto;
+		padding: 10px 20px;
+		color: #fff;
+		transition: all .2s;
+	}
+		.register-form .btn:hover {
+			background-color: #fff;
+			color: rgba(21,129,242, 1);
+		}
+
+		

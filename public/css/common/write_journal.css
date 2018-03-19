@@ -1,0 +1,78 @@
+.layout-head {
+    
+    margin: 20px 0 0 0;
+    background-color: #fff;
+    /*min-height: 500px;*/
+    padding: 10px;
+    width: 100%;
+
+}
+
+.heading-con {
+    box-shadow: 0 0 5px 0 #ccc;
+}
+
+.container-center800px {
+    max-width: 800px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+    .layout-head>label {
+        font-size: 15px;
+        color: #777;
+
+    }
+
+    .layout-head select {
+        font-size: 14px;
+        color: #777;
+    }
+
+    .backtolist {
+        font-size: 15px;
+        margin-top: 5px;
+        float: right;
+    }
+
+
+/* .write-panel {
+    margin-top: 10px;
+    height: 400px;
+} */
+
+.title-con {
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px dashed #eee;
+    padding: 10px;
+}
+
+.title-con>label {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #777;
+}
+
+.title-con>input {
+    width: 500px;
+    color: #777;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#write-panel-con {
+    margin-top: 5px;
+    height: 400px;
+}
+
+.layout-foot {
+    position: absolute;
+
+    margin: 10px 0;
+}
+
+    .layout-foot button {
+        padding-left: 40px;
+        padding-right: 40px;
+    }

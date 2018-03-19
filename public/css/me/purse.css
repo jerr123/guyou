@@ -1,0 +1,199 @@
+.box1{
+/*        background:#FBFBFB;*/
+    /*position:relative;*/
+    /*text-align:center;*/
+    padding: 15px 0 0 90px;
+    width:870px;
+    height:320px;
+    margin:0px auto;
+    /*background: #E5EBF2;*/
+}
+#balance{
+/*
+    position:absolute;
+    left:100px;
+    top:100px;
+*/
+}
+.box1 .panel{
+    text-align: center;
+    width: 160px;
+    height: auto;
+    background: #E5E7DD;
+    margin: 15px 0px 0px 0px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.box1 .panel .panel-body {
+    padding: 15px;
+    
+}
+.box1 .panel .panel-body h3 {
+    margin: 0;
+    margin-top: 5px; 
+    padding: 0;
+}
+.box1 .panel-footer {
+    background-color: rgb(246, 189, 26);
+    color: #fff;
+    border-top: 0px solid #fff;
+    padding: 6px 15px;
+    /*border-top: 1px solid #ddd;*/
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.box1 .panel .body-point {
+    /*background: */
+    color: #eb4f38;
+}
+.box1 .panel .footer-point {
+    color: #fff;
+    background-color: #eb4f38;
+}
+
+.box1 .panel .body-biocn {
+    color: rgb(246, 189, 26);
+}
+.box1 .panel .footer-biocn {
+    color: #fff;
+    background-color: rgb(246, 189, 26);
+}
+
+.box1 .panel .body-diamond {
+    color: #56abe4;
+}
+.box1 .panel .footer-diamond {
+    color: #fff;
+    background-color: #56abe4;
+}
+
+.box1 .panel .body-rmb {
+    color: #11cd6e;
+}
+.box1 .panel .footer-rmb {
+    color: #fff;
+    background-color: #11cd6e;
+}
+.box1 .recharge {
+    margin: 40px 0 0 0;
+    width: auto;
+}
+.box1 .recharge .btn {
+    margin: 0 15px;
+    font-size: 16px;
+    /*line-height: 18px;*/
+    text-decoration: none;
+    padding: 8px 60px;
+    border-radius:3px;
+    border:1px solid #fff;
+}
+.box1 .recharge .put-in {
+    background:#5CC931;
+    color:white;  
+}
+.box1 .recharge .put-in:hover{
+    border:1px solid #5CC931;
+    color: #5CC931;
+    background: #fff;
+}
+.box1 .recharge .put-out {
+    padding: 8px 45px;
+    background: #00bb9c;
+    color: #fff;
+}
+
+.box1 .recharge .put-out:hover {
+    border: 1px solid #00bb9c;
+    background: #fff;
+    color: #00bb9c;
+}
+
+.box1 .recharge .other-link a {
+    font-size: 12px;
+    background: #5c6868;
+    line-height: 14px;
+    padding: 2 4px;
+    margin: 0 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+.box1 .recharge .other-link a:hover {
+   
+    background: rgba(0,0,0,0.4);
+}
+
+
+
+/*下面这一部分废弃*/
+#balance table tr{
+    color:#a9b7b7;
+}
+#balance table tr td{
+    /*width:200px;*/
+}
+#money{
+    font-size:20px;
+    font-weight:bold;
+    color:black;
+}
+.font-color{
+    color:#908383;
+    font-weight:bold;
+}
+#recharge{
+    margin:0px auto;
+}
+#recharge #put-in{
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: none;
+    width:100px;
+    padding: 10px;
+    background:#5CC931;
+    color:white;
+    border-radius:3px;
+    border:0px;
+    /*position:absolute;*/
+    /*left:80px;*/
+}
+#recharge #put-in:hover{
+    background:white;
+    color:#5CC931;
+    border:1px solid #5CC931;
+}
+#recharge #put-out{
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: none;
+    padding: 10px;
+    width:100px;
+    background:#F5F3F3;
+    color:#696868;
+    border-radius:3px;
+    border:1px solid #696868; 
+    /*position:absolute;*/
+    left:200px;
+}
+#recharge #put-out:hover{
+    background:#696868;
+    color:#F5F3F3;
+}
+#recharge .other-link{ 
+
+    font-size:12px;
+    color:#7394F8;
+}
+ #recharge .other-link a{
+    float: right;
+    text-decoration:none;
+    color:#7394F8;
+    font-size:12px;
+    display: block;
+    margin: 0 10px;
+    padding-top: 10px;
+}
+ #recharge .other-link a:hover{
+    color:#b22f2f;
+}

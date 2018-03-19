@@ -1,0 +1,44 @@
+.member_option{
+    width:870px;
+    height:320px;
+/*        background:#FBFBFB;*/
+    margin:10px auto;
+    text-align:center;
+    position:relative;+
+}
+.member_option tr td button{
+    width:150px;
+    height:40px;
+    color:white;
+    border:0px;
+    background:#88D47C;
+    cursor:pointer;
+}
+.member_option tr td button:hover{
+    color:#88D47C;
+    background:white;
+    border:1px solid #88D47C;
+}
+.member_option table{
+    /*position:absolute;*/
+    margin: 40px 120px;
+    left:180px;
+    top:20px;
+}
+.member_option table tr td{
+    width:150px;
+    height:40px;
+    /*background:#d9cbcb;*/
+}
+.member_option tr td{
+    background-color:#fff; 
+    width:100px;
+    height:50px;
+    text-align:center;
+}
+.member_option table tr td img{
+    border-radius: 10px;
+    width:150px;
+    height:180px;
+    background:#d9cbcb;
+}

@@ -1,0 +1,961 @@
+/*************************\
+	$CONTENTS
+\*************************/
+/**
+ * CONTENTS ....... Contents
+ * LAYOUT
+ * KITS
+ * BASICS
+ * DYNAMICS
+ * RIGYTBOX
+ */
+
+/*************************\
+	$LAYOUT
+\*************************/
+.top-bottom-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.leftbox,
+.centerbox,
+.rightbox {
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.leftbox {
+  width: 200px;
+}
+.centerbox {
+  padding: 0 20px;
+  width: 700px;
+  
+}
+.rightbox {
+  width: 200px;
+}
+/*
+  左部内容
+ */
+.user-info-panel {
+  width: 100%;
+  box-shadow: 0 0 5px 0px #ccc;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #fff;
+}
+.user-info-panel .user-head-image {
+  margin: auto;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.user-info-panel .user-head-image img {
+  width: 100%;
+}
+.user-info-panel .user-nickname {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+.user-info-panel .user-infos {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+.user-info-panel .user-infos li {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: #777;
+  font-size: 12px;
+}
+.user-info-panel .info-title {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.subnav-panel {
+  box-shadow: 0 0 5px 0px #ccc;
+  background-color: #fff;
+  margin-top: 20px;
+  /*padding: 20px 20px;*/
+  width: 100%;
+}
+.subnav-panel .subnav-items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.subnav-panel .subnav-items li {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 25px;
+  transition: all 0.2s;
+}
+.subnav-panel i {
+    margin-right: 10px; /* 加上一个右边距 */
+}
+.subnav-panel .subnav-items a {
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  color: #555;
+  transition: all 0.2s;
+}
+.subnav-panel .subnav-items li:hover {
+  background-color: rgba(21,129,242, 0.5);
+               
+}
+.subnav-panel .subnav-items li:hover a {
+  color: #fff;
+}
+.subnav-panel .subnav-items li.active {
+  background-color: rgba(21,129,242, 1);
+
+}
+.subnav-panel .subnav-items li.active a {
+  color: #fff;
+}
+.ads-box {
+  margin-top: 20px;
+  width: auto;
+  padding: 0;
+}
+.ads-box .ad {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.ads-box .ad a {
+  display: block;
+}
+.ads-box .ad img {
+  width: 100%;
+  height: auto;
+}
+/*
+  中部内容
+ */
+.publish-box {
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 0 4px 0 #ccc;
+  /* 这里是为了不让子元素和父元素的边距发生重叠现象 */
+  padding-top: 1px;
+}
+.publish-box .publisher {
+  vertical-align: center;
+  color: #555;
+  font-size: 15px;
+  height: 70px;
+  display: block;
+  width: 640px;
+  margin: 10px 10px 0 10px;
+  padding: 10px;
+  overflow: auto;
+  transition: all 0.3s;
+}
+.publish-box .publisher .emoji_icon {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+
+.publish-box .manipulate {
+  overflow: hidden;
+  margin: 0px 10px;
+  padding: 5px 0;
+}
+.publish-box .other-publish {
+  float: left;
+  padding: 0;
+  margin: 2px 0 0 0;
+  list-style: none;
+  color: #999;
+  overflow: hidden;
+}
+.publish-box .other-publish li {
+  margin-left: 20px;
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.publish-box .other-publish li button {
+  color: #999;
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.1); 
+  
+  border: none;
+  outline: none;
+}
+
+
+.publish-box .other-publish li.active button {
+
+  color: rgba(255, 217, 82, 1);
+}
+.publish-box .other-publish li button:hover{
+  color: rgba(21,129,242, 1);
+}
+.publish-box .publish-btn-box {
+  float: right;
+  padding-right: 10px;
+}
+.publish-box .publish-btn-box .publish-word-num {
+  font-size: 14px;
+  margin-right: 10px;
+  color: #aaa;
+}
+.publish-box .publish-btn-box .publish-btn {
+  padding: 5px 25px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+/*************************\
+	$KITS
+\*************************/
+.at-panel, .photo-panel {
+  height: auto;
+  width: 660px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+
+  position: absolute;
+}
+
+
+
+.at-panel .ated-box {
+  list-style: none;
+  padding: 10px 10px 5px 10px;
+  margin: 0;
+  width: 100%;
+  border-top: 1px dashed #ccc;
+  border-bottom: 1px dashed #ccc;
+  overflow: hidden;
+  font-size: 12px;
+}
+.at-panel .ated-box li {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 217, 82, 1);;
+  color: #555;
+  white-space: nowrap;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.at-panel .ated-box i {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.at-panel .ated-box i.fa-times:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.at-panel .at-confirm-box {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 14px;
+}
+.at-panel .at-confirm-box p {
+  color: #999;
+  display: inline-block;
+  margin: 0;
+}
+
+#at-search-input {
+    font-size: 12px;
+    padding: 5px;
+    color: #999;
+    line-height: 12px;
+}
+
+
+
+.at-panel .at-confirm-box .at-confirm-btn {
+  padding: 7px 25px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.at-panel .at-choose-box {
+  z-index: 100;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  border-top: 1px dashed #ccc;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 #ccc;
+}
+
+    .at-choose-box .at-search-lists {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    .at-choose-box .at-search-lists li {
+        margin: 5px 13px;
+        position: relative;
+        width: 80px;
+        height: 100px;
+        padding-bottom: 20px;
+        background-color: #eee;
+        float: left;
+        cursor: pointer;
+    }
+
+    .at-choose-box .at-search-lists li:hover .add-hover-con {
+        display: block;
+    }
+
+
+    .at-choose-box .at-search-lists img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .at-choose-box .at-search-lists .nickname {
+        position: absolute;
+        top: 80px;
+        margin: 0;
+        padding: 0;
+        height: 20px;
+        background-color: rgba(118,204,53, 1);
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        padding-top: 3px;
+        line-height: 12px;
+    }
+
+    .at-choose-box .at-search-lists .add-hover-con {
+        color: #eee;
+        text-align: center;
+        display: none;
+        position: absolute;
+        font-size: 30px;
+        line-height: 30px;
+        padding-top: 25px;
+        width: 80px;
+        height: 80px;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0, 0.5);
+    }
+
+     .at-choose-box .at-search-pagination {
+        text-align: center;
+        border-top: 1px dashed #ccc;
+        padding-top: 10px;
+        margin: 10px auto 0;
+     }
+
+     .at-choose-box .at-search-pagination a {
+        display: inline-block;
+        /* color: #aaa;
+        text-decoration: none; */
+        font-size: 12px;
+        padding: 5px 10px;
+        
+     }
+
+/*      .at-choose-box .at-search-pagination a:hover {
+   background-color: #79d9cf;
+   color: #fff;
+   border-color: #79d9cf;
+} */
+
+
+.uploader-list {
+    overflow: hidden;
+}
+.uploader-list .file-item {
+    background-color: #fff;
+    display: blcok;
+    float: left;
+    margin: 10px;
+}
+
+.uploader-list .file-item img {
+    margin: auto;
+}
+
+.uploader-list .file-item .info {
+    border-bottom: 3px solid rgba(51,159,242,1);
+    padding-bottom: 8px;
+    width: 100px;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#filePicker {
+    display: block;
+    margin: 10px;
+}
+
+.btns-con {
+    overflow: hidden;
+    width: 100%;
+}
+
+.btn-upload {
+    margin: 10px 10px 10px 0;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid rgba(118,204,53, 1);
+    color: rgba(118,204,53, 1);
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-upload:hover {
+    background-color: rgba(118,204,53, 1);
+    color: #fff;
+}
+
+
+/* -------------  */
+
+.uploader-list {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px dashed #eee;
+}
+.file-item {
+    float: left;
+    position: relative;
+    margin: 0 20px 20px 0;
+    padding: 4px;
+}
+.file-item .error {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    background: rgba(242,29,29,1);
+    color: #fff;
+    text-align: center;
+    height: 20px;
+    font-size: 14px;
+    line-height: 23px;
+}
+.file-item .info {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    right: 4px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow : ellipsis;
+    font-size: 12px;
+    z-index: 10;
+}
+.upload-state-done:after {
+    content:"\f00c";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 32px;
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    color: #4cae4c;
+    z-index: 99;
+}
+.file-item .progress {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    height: 3px;
+    left: 4px;
+    height: 4px;
+    overflow: hidden;
+    z-index: 15;
+    margin:0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+}
+.file-item .progress span {
+    display: block;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    background: #d14 url(../images/progress.png) repeat-x;
+    -webit-transition: width 200ms linear;
+    -moz-transition: width 200ms linear;
+    -o-transition: width 200ms linear;
+    -ms-transition: width 200ms linear;
+    transition: width 200ms linear;
+    -webkit-animation: progressmove 2s linear infinite;
+    -moz-animation: progressmove 2s linear infinite;
+    -o-animation: progressmove 2s linear infinite;
+    -ms-animation: progressmove 2s linear infinite;
+    animation: progressmove 2s linear infinite;
+    -webkit-transform: translateZ(0);
+}
+@-webkit-keyframes progressmove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 17px 0;
+    }
+}
+@-moz-keyframes progressmove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 17px 0;
+    }
+}
+@keyframes progressmove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 17px 0;
+    }
+}
+
+a.travis {
+  position: relative;
+  top: -4px;
+  right: 15px;
+}
+
+#select-album {
+    outline: none;
+    margin: 10px;
+    border: 1px solid rgba(51,159,242,1);
+    background-color: #fff;
+    padding: 5px 10px;
+    color: rgba(51,159,242,1);
+}
+
+
+/* photo-panel */
+.photo-panel {
+    border-top: 1px solid #eee;
+}
+.photo-panel .photo-form {
+  overflow: hidden;
+  border: 1px dashed #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+
+    .photo-panel .photo-up-btn {
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        background-color: #79d9cf;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .photo-panel .photo-up-btn:hover {
+      border-color: #79d9cf;
+      color: #79d9cf;
+      background-color: #fff;
+    }
+
+/*************************\
+	$BASICS
+\*************************/
+
+
+
+/*************************\
+	$DYNAMICS
+\*************************/
+
+.dynamics-box {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.dynamics-box .dynamic {
+    padding: 10px 0;
+    width: 100%;
+    min-height: 200px;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    background-color: #fff;
+}
+
+.dynamics-box .dynamic:not(:first-child) {
+    margin-top: 10px;
+}
+
+.dynamic .top {
+    padding: 0 10px;
+    min-height: 50px;
+    overflow: hidden;
+}
+
+    .dynamic .top .head-img {
+        float: left;
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .dynamic .top .head-img img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+.dynamic .top-other {
+    overflow: hidden;
+    min-height: 50px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
+    width: 590px;
+}
+
+    .dynamic .top-other .nickname {
+        font-size: 14px;
+        padding-bottom: 10px;
+        line-height: 14px;
+    }
+
+    .dynamic .top-other .infos {
+        line-height: 12px;
+        font-size: 12px;
+        color: #aaa;
+    }
+
+.dynamic .content {
+    margin: 10px;
+    font-size: 14px;
+}
+
+    .dynamic .content .one-img {
+
+    }
+
+    .dynamic .content .two-img {
+
+    }
+
+    .dynamic .content .four-img {
+
+    }
+
+    .dynamic .content .nine-img {
+
+    }
+
+.dynamic .bar {
+    min-height: 30px;
+    background-color: #eeebe2;
+}
+
+    .dynamic .bar ul {
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .dynamic .bar ul li {
+        float: left;
+        color: rgba(110, 77, 50, 1);
+        font-size: 12px;
+        line-height: 12px;
+        padding: 9px 30px;
+    }
+
+    .dynamic .bar ul li:not(:first-child) {
+        border-left: 1px dashed rgba(110, 77, 50, 0.3);
+    }
+
+    .dynamic .bar ul li:hover {
+        background-color: rgba(110, 77, 50, 1);
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+.dynamic .zan {
+    margin: 5px 0;
+    mint-height: 30px;
+}
+
+    .dynamic .zan ul {
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .dynamic .zan li {
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        margin-left: 10px;
+        font-size: 20px;
+        color: rgba(110, 77, 50, 1);
+        float: left;
+    }
+
+    .dynamic .zan li:not(.zan-btn) {
+        border: 1px solid #ccc;
+    }
+
+    .zan-btn:hover  {
+        cursor: pointer;
+    }
+
+    .dynamic .zan li>img {
+        width: 30px;
+        height: 30px;
+    }
+
+.dynamic .comment {
+    font-size: 14px;
+    min-height: 10px;
+    padding: 5px 10px 0;
+    
+}
+
+    .dynamic .comments-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+
+    .dynamic .comments-list li {
+        margin: 5px 0px;
+        padding: 0;
+        color: #555;
+        display: block;
+    }
+
+    .dynamic .comments-list p {
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .dynamic .comments-list .nickname {
+        color: rgba(21,129,242, 1);
+    }
+
+    .dynamic .comments-list .btn-follow-com {
+      cursor: pointer;
+      color: rgba(110,77,50,1);
+      margin-left: 10px;
+    }
+
+    .dynamic .comments-list .btn-follow-com:hover {
+        color: rgba(110,77,50,0.5)
+    }
+
+    .dynamic .inner-comments-list  {
+        /*list-style: none;*/
+        margin-left: 2em;
+    }
+
+    .dynamic .publish-comment {
+        width: 100%;
+    }
+
+        .dynamic .publish-comment .c-sub-btn {
+            font-size: 14px;
+            line-height: 14px;
+            padding: 5px 10px;
+            margin: 0;
+        }
+
+    .dynamic .publish-comment input {
+        width: 550px;
+        padding: 5px;
+        font-size: 12px;
+        line-height: 12px;
+        color: #777;
+    }
+
+ 
+.load-more-box {
+    margin-top: 20px;
+}
+
+    .load-more-box .btn-more {
+        width: 100%;
+    }
+
+
+/*************************\
+    $RIGHTBOX
+\*************************/
+
+.rightbox .infos{
+    padding: 10px;
+    
+    box-shadow: 0px 0px 5px 0px #ccc;
+    background-color: #fff;
+}
+
+.infos .recognize,
+.infos .visiters {
+    overflow: hidden;
+    width: 100%;
+    /*background-color: #ccc; */
+    min-height: 200px;
+}
+
+.infos .visiters {
+    margin-top: 20px;
+}
+
+.infos .top {
+    padding: 5px 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #aaa;
+
+}
+
+.infos .top>span {
+        display: inline-block;
+}
+
+.infos .top .top-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #777;
+}
+
+
+
+.infos ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+    .recognize .link {
+        float: right;
+    }
+
+    .recognize .link a {
+        color: rgba(21,129,242, 1);
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .infos li {
+        float: left;
+        width: 60px;
+    }
+
+        .infos li .img-con {
+            width: 40px;
+            height: 40px;
+            margin: 5px auto;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .infos li img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .infos .nickname {
+            font-size: 13px;
+            color: #555;
+            width: 100%;
+            text-align: center;
+        }
+
+        .maybe-friends .add-friend {
+            
+            font-size: 12px;
+            margin: 5px auto 0px;
+            padding: 3px 10px;
+            background-color: #fff;
+            border: 1px solid rgba(21,129,242, 0.5);
+            color: rgba(21,129,242, 1);
+            outline: none;
+        }
+
+        .maybe-friends .add-friend:hover {
+            background-color: rgba(21,129,242, 1);
+            border-color: rgba(21,129,242, 1);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .visiters-list .date-time {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+        }
+
+.visiters .total {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+.visiters .page {
+    float: right;
+}
+
+
+    .visiters .page>i {
+        width: 16px;
+        text-align: center;
+        color: rgba(21,129,242, 1);  
+    }
+
+    .visiters .page i:hover {
+        cursor: pointer;
+        color: rgba(21,129,242, 0.3);
+    }
+
